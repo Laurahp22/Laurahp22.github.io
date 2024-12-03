@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil y Eventos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a tu Perfil</h1>
+    </header>
+
+    <div class="perfil">
+        <h2>Mi Perfil</h2>
+        <form id="perfilForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="bio">Biografía:</label>
+            <textarea id="bio" name="bio"></textarea>
+            
+            <button type="submit">Guardar Perfil</button>
+        </form>
+    </div>
+
+    <div class="eventos">
+        <h2>Eventos Disponibles</h2>
+        <ul id="eventosList">
+            <li>Evento 1 <button class="inscribir-btn" onclick="inscribirse('Evento 1')">Inscribirse</button></li>
+            <li>Evento 2 <button class="inscribir-btn" onclick="inscribirse('Evento 2')">Inscribirse</button></li>
+            <li>Evento 3 <button class="inscribir-btn" onclick="inscribirse('Evento 3')">Inscribirse</button></li>
+        </ul>
+    </div>
+
+    <div class="inscripciones">
+        <h2>Eventos en los que te has inscrito:</h2>
+        <ul id="inscripcionesList">
+            <!-- Aquí se mostrarán los eventos inscritos -->
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
